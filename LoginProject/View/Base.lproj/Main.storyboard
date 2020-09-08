@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Rajdhani-Light.ttf">
+            <string>Rajdhani-Light</string>
+        </array>
+        <array key="Rajdhani-Regular.ttf">
+            <string>Rajdhani-Regular</string>
+        </array>
+        <array key="Rajdhani-SemiBold.ttf">
+            <string>Rajdhani-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="LoginProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="tIv-lu-TQd">
+                                <rect key="frame" x="87" y="202" width="240" height="492"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tesla-Logo-PNG-Photos" translatesAutoresizingMaskIntoConstraints="NO" id="9zP-nj-nul">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="212"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="212" id="o4r-Dq-9js"/>
+                                            <constraint firstAttribute="width" constant="240" id="rzD-0C-pfj"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Wp-FE-USW" customClass="DesignableTextField" customModule="LoginProject" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="235" width="240" height="40"/>
+                                        <color key="tintColor" red="0.72190326449999997" green="0.098423503339999996" blue="0.072172038260000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Prb-2K-GpJ"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.72190326449999997" green="0.098423503339999996" blue="0.072172038260000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Rajdhani-Light" family="Rajdhani" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.72190326449999997" green="0.098423503339999996" blue="0.072172038260000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="person.circle" catalog="system"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="jlb-6j-SaW"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M8k-yS-nkk" customClass="DesignableTextField" customModule="LoginProject" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="298" width="240" height="40"/>
+                                        <color key="tintColor" red="0.72190326449999997" green="0.098423503339999996" blue="0.072172038260000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="9NK-FT-6YR"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.72190326449999997" green="0.098423503339999996" blue="0.072172038260000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Rajdhani-Light" family="Rajdhani" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.72190326449999997" green="0.098423503339999996" blue="0.072172038260000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="pencil.and.ellipsis.rectangle" catalog="system"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="rSa-VQ-foc"/>
+                                        </connections>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3jZ-h6-ICo" customClass="DesignButton" customModule="LoginProject" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="361" width="240" height="54"/>
+                                        <color key="backgroundColor" red="0.72190326449999997" green="0.098423503339999996" blue="0.072172038260000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="54" id="GCc-aa-hv5"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="GLl-ma-goK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Rajdhani-SemiBold" family="Rajdhani" pointSize="20"/>
+                                        <state key="normal" title="LOGIN">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="loginButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dVS-KR-NIu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="srN-Jd-ZiE" customClass="DesignButton" customModule="LoginProject" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="438" width="240" height="54"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="9eq-9W-O0k"/>
+                                            <constraint firstAttribute="height" constant="54" id="TwO-xx-Ua7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Rajdhani-Regular" family="Rajdhani" pointSize="17"/>
+                                        <state key="normal" title="Forgot password?">
+                                            <color key="titleColor" red="0.72190326449999997" green="0.098423503339999996" blue="0.072172038260000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.72190326449999997" green="0.098423503339999996" blue="0.072172038260000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="passwordButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1p1-Is-Ilp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="tIv-lu-TQd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sYO-NH-Mku"/>
+                            <constraint firstItem="tIv-lu-TQd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yRm-RZ-hJZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="M8k-yS-nkk" id="XkJ-DN-wNg"/>
+                        <outlet property="usernameTextField" destination="7Wp-FE-USW" id="Kry-xb-IEn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="117.85714285714285"/>
+        </scene>
+        <!--Welcome View Controller-->
+        <scene sceneID="hFW-3R-inz">
+            <objects>
+                <viewController storyboardIdentifier="WelcomeViewController" id="TaH-bu-ULr" customClass="WelcomeViewController" customModule="LoginProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BIR-B1-3Em">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="7xR-Y8-2u3">
+                                <rect key="frame" x="34" y="321" width="346" height="154"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCT-5a-4cX">
+                                        <rect key="frame" x="0.0" y="0.0" width="346" height="58"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="346" id="eoy-dz-Uyv"/>
+                                            <constraint firstAttribute="height" constant="58" id="o25-r5-1xp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Rajdhani-SemiBold" family="Rajdhani" pointSize="30"/>
+                                        <color key="textColor" red="0.72190326449999997" green="0.098423503339999996" blue="0.072172038260000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🎮" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRx-YH-VH0">
+                                        <rect key="frame" x="0.0" y="96" width="346" height="58"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="58" id="ZSB-bZ-1LX"/>
+                                            <constraint firstAttribute="width" constant="346" id="p7z-Kh-Cr4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Rajdhani-SemiBold" family="Rajdhani" pointSize="45"/>
+                                        <color key="textColor" red="0.72190326449999997" green="0.098423503339999996" blue="0.072172038260000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZx-xn-Kxp" customClass="DesignButton" customModule="LoginProject" customModuleProvider="target">
+                                <rect key="frame" x="44" y="107" width="50" height="45"/>
+                                <color key="backgroundColor" red="0.72190326449999997" green="0.098423503339999996" blue="0.072172038260000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="25"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="closeButtonTapped:" destination="TaH-bu-ULr" eventType="touchUpInside" id="aon-dB-x7J"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="7xR-Y8-2u3" firstAttribute="centerY" secondItem="BIR-B1-3Em" secondAttribute="centerY" constant="-50" id="3gS-IQ-bmX"/>
+                            <constraint firstItem="Lmm-NZ-t3G" firstAttribute="trailing" secondItem="oZx-xn-Kxp" secondAttribute="trailing" constant="320" id="Hmq-5m-RUZ"/>
+                            <constraint firstItem="oZx-xn-Kxp" firstAttribute="top" secondItem="Lmm-NZ-t3G" secondAttribute="top" constant="63" id="S0C-43-9IH"/>
+                            <constraint firstItem="oZx-xn-Kxp" firstAttribute="leading" secondItem="Lmm-NZ-t3G" secondAttribute="leading" constant="44" id="VHN-IC-SDT"/>
+                            <constraint firstItem="7xR-Y8-2u3" firstAttribute="centerX" secondItem="BIR-B1-3Em" secondAttribute="centerX" id="iYb-dX-JqA"/>
+                            <constraint firstItem="Lmm-NZ-t3G" firstAttribute="bottom" secondItem="oZx-xn-Kxp" secondAttribute="bottom" constant="710" id="scf-hF-j09"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Lmm-NZ-t3G"/>
+                    </view>
+                    <connections>
+                        <outlet property="welcomeLabel" destination="bCT-5a-4cX" id="4hv-tb-AJD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="28z-Wd-n5S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="927.536231884058" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Tesla-Logo-PNG-Photos" width="1600" height="1600"/>
+        <image name="pencil.and.ellipsis.rectangle" catalog="system" width="128" height="81"/>
+        <image name="person.circle" catalog="system" width="128" height="121"/>
+    </resources>
+</document>
